@@ -1,0 +1,20 @@
+﻿<Window x:Class="LanguageFlashCards2._0.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LanguageFlashCards2._0"
+        xmlns:controls="clr-namespace:LanguageFlashCards2._0.Controls"
+        mc:Ignorable="d"
+        Title="Flash Cards" Height="375" Width="600" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <DockPanel>
+            <controls:CurrentStatsPanel x:Name="panelCurrentStats" DockPanel.Dock="Left" Visibility="Visible" Width="284"/>
+
+            <controls:ModeSelectionPanel x:Name="panelModeSelection" DockPanel.Dock="Right" Visibility="Visible"/>
+
+            <controls:FlashCardPanel x:Name="panelFlashCard" Visibility="Collapsed"/>
+        </DockPanel>
+        
+    </Grid>
+</Window>
